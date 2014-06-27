@@ -6,7 +6,7 @@
 * `observers` 的定义？『观察者方法』
 * `external name` 的定义？『外部名称』
 * `local name` 的定义？『内部名称』
-* `constant properties` 的定义？『恒定属性』
+* `constant properties` 的定义？『常量属性』
 * `Optional Property Types` 的定义？『可选属性类型』
 * `Memberwise` 的定义？『成员式』
 * `Initializer Delegation` 的定义？『构造代理』
@@ -17,11 +17,11 @@
 
 ## 构造过程 (Initialization)
 
-_构造过程_是准备实例化类、结构或枚举的过程。该过程需要为当前实例化对象的每个属性值设置初始值，并且在其准备好之前执行所需的设置或初始化。
+_构造过程_是准备实例化类、结构体或枚举的过程。该过程包括为的每个属性设置初始值，以及在其准备好之前执行所需的设置或初始化。
 
 > “Initialization is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that is required before the new instance is ready to for use.”
 
-你通过定义_构造方法_来实现构造过程，就好比能够创建特定类型的新实例化对象的特殊方法。与 Objective-C 不同的是，Swift 的构造方法没有返回值。其主要作用是保证一个类的新实例在其首次使用之前能够被正确地初始化。
+你通过定义_构造方法_来实现构造过程，这就像能够创建特定类型的新实例化对象的特殊方法。与 Objective-C 不同的是，Swift 的构造方法没有返回值。其主要作用是保证一个类的新实例在其首次使用之前能够被正确地初始化。
 
 > “You implement this initialization process by defining initializers, which are like special methods that can be called to create a new instance of a particular type. Unlike Objective-C initializers, Swift initializers do not return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they are used for the first time.”
 
