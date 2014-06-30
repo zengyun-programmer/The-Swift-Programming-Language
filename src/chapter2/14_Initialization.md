@@ -81,7 +81,7 @@ println("The default temperature is \(f.temperature)° Fahrenheit")
 > 如果一个属性值总是拥有相同的初始值，请为其提供默认值，而不是在构造方法中设定初始值。虽然结果是一样的，*但默认值将属性值声明和初始化更紧密地绑在一起。这样不仅更简短，也更清晰，能够让你通过默认值来判断该属性值的数据类型。默认值也能让你更容易理解默认构造方法与构造方法继承，我们会在接下来的章节中描述它们。
 > > “If a property always takes the same initial value, provide a default value rather than setting a value within an initializer. The end result is the same, but the default value ties the property’s initialization more closely to its declaration. It makes for shorter, clearer initializers and enables you to infer the type of the property from its default value. The default value also makes it easier for you to take advantage of default initializers and initializer inheritance, as described later in this chapter.”
 
-你可以将上面的 `Fahrenheit` 结构简单写成在属性 `temperature` 被申明时提供一个默认值：
+你可以将上面的 `Fahrenheit` 结构简单写成在属性 `temperature` 被声明时提供一个默认值：
 
 >“You can write the Fahrenheit structure from above in a simpler form by providing a default value for its temperature property at the point that the property is declared:”
 
