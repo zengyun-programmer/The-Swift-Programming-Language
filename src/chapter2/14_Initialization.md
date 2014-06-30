@@ -205,23 +205,23 @@ cheeseQuestion.ask()
 cheeseQuestion.response = "Yes, I do like cheese.
 ```
 
-你无法知道一个调查问题的回应直到它被回答了，因此属性值 `response` 被声明为 `String?` 类型，或称 『可选 `String`』。当一个新的 `SurveyQuestion` 实例被初始化时，它会被自动分配默认值 `nil`，表示『空字符串』。
+在一个调查问题被回答之前，我们无法确定它的答案。因此属性值 `response` 被声明为 `String?` 类型，或称 『可选 `String`』。当一个新的 `SurveyQuestion` 实例被初始化时，它会被自动分配默认值 `nil`，表示『空字符串』。
 
 > “The response to a survey question cannot be known until it is asked, and so the response property is declared with a type of String?, or “optional String”. It is automatically assigned a default value of nil, meaning “no string yet”, when a new instance of SurveyQuestion is initialized.”
 
-### 在构造过程中修改恒定属性 (Modifying Constant Properties During Initialization)
+### 在构造过程中修改常量属性 (Modifying Constant Properties During Initialization)
 
-你可以在构造过程中的任意时候修改恒定属性的值，只要在构造过程结束前设定为一个明确的值。
+你可以在构造过程的任意时候修改常量属性的值，但要保证在构造过程结束前常量能被赋值为一个明确的值。
 
 > “You can modify the value of a constant property at any point during initialization, as long as it is set to a definite value by the time initialization finishes.”
 
 提示：
 
-> 对于类的实例，一个恒定属性值只能在申明它的类初始化期间进行修改。它不能由子类修改。
+> 在类的实例中，常量属性只能在声明它的类的构造方法中修改，不能被子类修改。
 
 > > “For class instances, a constant property can only be modified during initialization by the class that introduces it. It cannot be modified by a subclass.”
 
-你可以修改上面的 `SurveyQuestion` 例子，使问题的 `text` 属性使用一个恒定属性而不是一个可变属性，以表明一旦 `SurveyQuestion` 的实例被创建，问题属性便不能改变。即使 `text` 属性现在是一个恒定属性，它仍然可以在类的构造方法中设定：
+你可以修改上面的 `SurveyQuestion` 例子，使问题的 `text` 属性使用一个常量属性而不是一个可变属性，以表明一旦 `SurveyQuestion` 的实例被创建，问题属性便不能改变。即使 `text` 属性现在是一个恒定属性，它仍然可以在类的构造方法中设定：
 
 > “You can revise the SurveyQuestion example from above to use a constant property rather than a variable property for the text property of the question, to indicate that the question does not change once an instance of SurveyQuestion is created. Even though the text property is now a constant, it can still be set within the class’s initializer:”
 
