@@ -180,7 +180,7 @@ let veryGreen = Color(0.0, 1.0, 0.0)
 
 #### 可选属性类型 (Optional Property Types)
 
-如果你有一个自定义类型的属性值允许设置为『空值』——可能因为该属性值不能在构造过程中赋值，也可能因为在某些时候允许为『空值』——定义该属性值为_可选_类型。可选类型的属性值会被自动初始化为 `nil`，申明该属性值在构造过程有意设定为『空值』。
+如果你有一个自定义类型的属性值允许设置为『空值』——可能因为该属性值不能在构造过程中赋值，也可能因为在某些时候允许为『空值』——定义该属性值为_可选_类型。可选类型的属性值会被自动初始化为 `nil`，表明该属性值在构造过程有意设定为『空值』。
 
 > “If your custom type has a stored property that is logically allowed to have “no value”—perhaps because its value cannot be set during initialization, or because it is allowed to have “no value” at some later point—declare the property with an optional type. Properties of optional type are automatically initialized with a value of nil, indicating that the property is deliberately intended to have “no value yet” during initialization.”
 
