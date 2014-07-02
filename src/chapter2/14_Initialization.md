@@ -221,7 +221,7 @@ cheeseQuestion.response = "Yes, I do like cheese.
 
 > > “For class instances, a constant property can only be modified during initialization by the class that introduces it. It cannot be modified by a subclass.”
 
-你可以修改上面的 `SurveyQuestion` 例子，使问题的 `text` 属性使用一个常量属性而不是一个可变属性，以表明一旦 `SurveyQuestion` 的实例被创建，问题属性便不能改变。即使 `text` 属性现在是一个恒定属性，它仍然可以在类的构造方法中设定：
+我们可以修改上面的`SurveyQuestion`例子，将问题ˆ中的`text`属性由变量改为常量。以表明一旦 `SurveyQuestion` 的实例被创建，问题属性便不能改变。即使 `text` 属性现在是一个恒定属性，它仍然可以在类的构造方法中设定：
 
 > “You can revise the SurveyQuestion example from above to use a constant property rather than a variable property for the text property of the question, to indicate that the question does not change once an instance of SurveyQuestion is created. Even though the text property is now a constant, it can still be set within the class’s initializer:”
 
